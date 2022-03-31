@@ -93,7 +93,6 @@ class ContentModel: ObservableObject {
     
     func isPossible(word: String) -> Bool {
         var tempWord = rootWord
-        
         for letter in word {
             if let pos = tempWord.firstIndex(of: letter) {
                 tempWord.remove(at: pos)
